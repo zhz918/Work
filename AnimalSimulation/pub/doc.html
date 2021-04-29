@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Animal Simulation Documentation</title>
+        <link rel="stylesheet" href="styles.css">
+    <head>
+    <body>
+        <h1 class="pageTitle"> Animal Life Simulation Library Documentation</h1>
+
+        <h2> Getting Started </h2>
+        <p> The scripts that need to be included are the library code for this library, which is animal_sim.js. No other
+            external libraries or CSS files are needed. Below is basic functionality to create an info display, resource chart builder,
+            and simulation builder. These are main objects used in the library.
+        </p>
+
+        <p class="codeSnippet">
+            const infoDisplay = new infoDisplayBuilder("displayInfoContainer")<br>
+            const resChartBuilder = new resourceChartBuilder("resourceChartContainer", "berries", 300, 200, 10)<br>
+            const simBuilder = new simulationBuilder("mapContainer", resChartBuilder, infoDisplay, "images/great-lakes.jpg", false, 800, 480, 20, 100, 50, 40, 100)
+        </p>
+
+        <h2> Information Display </h2>
+
+        <p> The methods of the information display are accessed through an infoDisplayBuilder object as follows. </p>
+        <p class="codeSnippet">
+            infoDisplayBuilder(infoContainerId)
+        </p>
+
+        <p> <b>infoContainerId</b>: the id of the HTML object where the info display will be mounted.<br>
+            Return value: none. </p>
+
+        <p> Below are methods accessible through an infoDisplayBuilder object.
+
+        <p class="codeSnippet">
+            addAnimalType: function(name, imageSrc, imageAlt, description, maxCount, speed,
+                    positionType, preyList, resourcesNeeded, reproductionChance, intelligence)
+        </p>
+
+
+        <p> Adds a new animal type to the simulation. The name cannot be used before for another animal type. <br>
+            <br>
+            <b>name</b>: the name of the animal to be displayed in the animal's section on the info display.<br>
+            <b>imageSrc</b>: the relative path to the image of the animal that is used as the image in the animal's section in the info display
+            and as its token in the simulation<br>
+            <b>imageAlt</b>: alt text for the image reference by imageSrc.<br>
+            <b>description</b>: the main text to be displayed in the animal's section in the info display section.<br>
+            <b>maxCount</b>: the maximum number of animals of this type that can be in the simulation at any given point.<br>
+            <b>speed</b>: the distance the an animal of this type can move in one update of the simulation, measured in pixels.<br>
+            <b>positionType</b>: can be either "land", "air", or "water". Determines whether an animal can be positioned in land or water areas.<br>
+            <b>preyList</b>: the list of animal names that this animal type can eat. When an animal of this type and an animal of a type in the prey list
+            are in close proximity, the prey will be removed from the simulation.<br>
+            <b>resourcesNeeded</b>: the list of resources that this animal needs to survive. Each resource is specified as an array of three elements.
+            The first element is the name of the resource. The second element is the number of this resource that an animal of this type consumes
+            in one day. The third element is the chance of this animal dying and being removed in a simulation update if it cannot receive its
+            needed amount of the resource.<br>
+            <b>reproductionChance</b>: the chance of producing another animal of this type when two animals of this type are in close proximity. Ranges from 0
+            to 100, whether 0 denotes a 0% chance while 100 denotes a 100% chance of producing another animal.<br>
+            <b>intelligence</b>: the chance of an animal of this type pursuing a prey given that they are in close proximity. A 0 represents a 0% chance of
+            pursuing the prey, while 100 represents a 100% chance. If it is pursuing, then on the next simulation update, the movement of the animal will be
+            in the direction of the prey.<br>
+            Return value: none. </p>
+
+        <p class="codeSnippet">
+            removeAnimalType: function(name)
+        </p>
+
+        <p> Removes an animal type from the simulation. If the animal type does not exist, logging will be available.<br>
+            <b>name</b>: the animal type to be removed.<br>
+            Return value: none.
+        </p>
+
+        <h2> Simulation Builder </h2>
+
+        <p class="codeSnippet">
+            function simulationBuilder(mapContainerId, resChartBuilder, infoDisplay,
+                    mapImgSrc, allowUserEditing, mapWidth, mapHeight, mapInterval, resInterval,
+                    preyCatchDistance, reproductionDistance, pursueRadius)
+        </p>
+
+        <p> Creates a simulation builder from which simulation logic functions can be accessed.<br>
+            <br>
+            <b>mapContainerId</b>: the id of the HTMl element representing a map of the simulation.<br>
+            <b>resChartBuilder</b>: a resourceChartBuilder object that will be run in the simulation.<br>
+            <b>infoDisplay</b>: an infoDisplayBuilder object that will be run in the simulation.<br>
+            <b>mapImgSrc</b>: the relative path to the map image of the simulation.<br>
+            <b>allowUserEditing</b>: a boolean value indicating whether users will be able to carve out water regions for the simulation<br>
+            <b>mapWidth</b>: the width of the map image in pixels.<br>
+            <b>mapHeight</b>: the height of the map image in pixels.<br>
+            <b>mapInterval</b>: the number of milliseconds between each update of the simulation.<br>
+            <b>resInterval</b>: the number of milliseconds between each update of the resource chart.<br>
+            <b>preyCatchDistance</b>: the distance in pixels where a predator will be able to catch any prey within this distance of the predator.<br>
+            <b>reproductionDistance</b>: the distance in pixels where two members of the same animal type can produce a third animal of the animal type
+            with probability reproductionChance as given in the infoDisplayBuilder.<br>
+            <b>pursueRadius</b>: the distance that a predator will be able to pursue a prey on the simulation update. When pursuing, the predator will
+            move in the direction of the prey on the simulation update.<br>
+            Return value: none.</p>
+
+        <p class="codeSnippet">
+            addAnimalOnMap: function(animalType, x, y, isInitial)
+        </p>
+
+        <p> Add an instance of an animalType to the simulation.<br>
+            <br>
+            <b>animalType</b>: the name of the animal type to be added.<br>
+            <b>x</b>: the distance from the left side of the map where this animal will be initialized.<br>
+            <b>y</b>: the distance from the top side of hte map where this animal will be initialized.<br>
+            <b>isInitial</b>: a boolean indicating whether this animal is present in the initial configuration of animals will the page is loaded.<br>
+            Return value: -1 if the animal cannot be placed on land or water. 0 otherwise
+        </p>
+
+        <p class="codeSnippet">
+            removeAnimalFromMap: function(id)
+        </p>
+
+        <p> Removes an animal instance in the simulation.<br>
+            id: the internal id of the animal to be removed. This is assigned using the maxId attribute of the simulationBuilder.<br>
+            </p>
+
+        <p class="codeSnippet">
+            moveAnimals: function()
+        </p>
+
+        <p> Update the simulation one step <br>
+            <br>
+            Return value: none. </p>
+
+        <p class="codeSnippet">
+            addResourceType: function(name, initialValue, maxRemaining, replenishingRate)
+        </p>
+
+        <p> Add a resource to be tracked in the simulation.<br>
+            <br>
+            <b>name</b>: the name of the resource.<br>
+            <b>initialValue</b>: the amount of the resource when the simulation starts.<br>
+            <b>maxRemaining</b>: the maximum amount of this resource at any given point in the simiulation.<br>
+            <b>replenishingRate</b>: the number of this resource that replenishes each simulation update.<br>
+            Return value: none.
+            </p>
+
+        <p class="codeSnippet">
+            addControlPanel: function(mode)
+        </p>
+
+        <p> Add the control panel options to the simulation.<br>
+            <b>mode</b>: can be "user" or "developer". In user mode, the simulation can be run as usual. In developer mode, only
+            carving out water regions is possible. In this mode, there will be code output for each region carved out that can be
+            used to write code for the simulation in the case the developer does not want the user to carve out water regions.<br></p>
+            Return value: none.
+        <p class="codeSnippet">
+            defineWaterRegion: function(leftX, rightX, topY, bottomY)
+        </p>
+
+        <p> The water region to be added to the simulation. <br>
+            <br>
+            <b>leftX/topY</b>: the coordinates of the top left corner of the region.<br>
+            <b>rightX/bottomY</b>: the coordinates of the bottom right corner of the region<br>
+            Return value: none.
+            </p>
+
+        <h2> Resource Chart Builder </h2>
+        
+        <p class="codeSnippet">
+            function resourceChartBuilder(chartContainer, resourceName, chartWidth, chartHeight, maxPoints)
+        </p>
+
+        <p> Creates an object that can control the resource charts.<br>
+            <br>
+            <b>chartContainer</b>: the id of the HTML element where the resource chart will be mounted.<br>
+            <b>resourceName</b>: the name of the resource to be tracked.<br>
+            <b>chartWidth</b>: the width of the chart in pixels.<br>
+            <b>chartHeight</b>: the height of the chart in pixels.<br>
+            <b>maxPoints</b>: the maximum number of bars that will be displayed at once in the chart.<br>
+            Return value: none.
+            </p>
+
+        <p class="codeSnippet">
+            buildChart: function(maxResources)
+        </p>
+
+        <p> Creates an empty chart. <br>
+            <br>
+            <b>maxResources</b>: the maximum amount of the resource being tracked that can be in the simulation at any given time.<br>
+            Return value: none.
+            </p>
+
+        <p class="codeSnippet">
+            addNewPoint: function(newY, maxResources)
+        </p>
+
+        <p> Adds a point to the right-most side of the chart. <br>
+            <b>newY</b>: the amount of the resource at the new point in time.<br>
+            <b>maxResources</b>: the maximum amount of the resource being tracked that can be in the simulation at any given time.<br>
+            Return value: none. </p>
+
+    </body>
+</html>
