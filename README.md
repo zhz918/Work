@@ -1,6 +1,6 @@
 # Work
 
-A description for each of these projects is below:
+A description for each of these projects is below.
 
 ## AnimalSimulation
 
