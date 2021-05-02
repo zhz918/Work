@@ -1,0 +1,7 @@
+#futureMoneyGraph {
+    text-align: center
+}
+
+.tick line{
+    visibility:hidden;
+}

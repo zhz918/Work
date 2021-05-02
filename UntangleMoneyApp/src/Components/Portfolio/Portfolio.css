@@ -1,0 +1,38 @@
+
+.projects{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border-style: hidden;
+    padding: 18px; 
+    text-align: center;
+    
+}
+
+.projects h1{
+    font-family: 'Ruda', sans-serif;
+}
+
+.projects p{
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+}
+
+.progress-block{
+    border-radius: 10px;
+    border: 2px solid #f6f7fa;
+    background-color: #5e6ad6;
+    margin: 10px;
+    padding: 10px;
+    border-width: medium;
+    display: inline-block;
+    width: 400px;
+    text-decoration: none;
+}
+
+.progress-block > h3{
+    color: white;
+}
+
+.prgress-graph-button{
+    border-radius: 12px;
+}
