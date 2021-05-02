@@ -1,0 +1,12 @@
+.statsBar img{
+    height: 25px;
+    margin-left: 15px;
+    margin-right: 3px;
+}
+
+.statsBar{
+    font-size: 20px;
+    display: flex;
+    justify-content: left;
+    margin: 10px;
+}

@@ -1,0 +1,176 @@
+.followupContainer {
+    text-align: center;
+    display: flex;
+}
+
+.followup{
+    margin-left: 250px;
+}
+
+.StoryContainer{
+    border-radius: 8px;
+    background-color: #f5f5f8;
+    width: 800px;
+    height: 600px;
+}
+
+.statAndButtons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.followExist{
+    width: 700px;
+    margin-left: 40px;
+    float:left;
+    position: absolute;
+}
+
+.StoryInfo{
+    text-align: left;
+    margin-left: 40px;
+    transform: scale(1.1);
+}
+
+.StoryInfo span{
+    margin-left: 10px;
+}
+
+.RankLink {
+    text-decoration: none;
+    color: black;
+}
+
+.ContectImage{
+    width: 700px;
+    height: 320px;
+}
+.StoryContent{
+    box-shadow: 0px 0px 10px 5px #e9e8e8;
+    background-color: #f4f4f4;
+    height: 310px;
+    width: 300px;
+    display: inline-block;
+
+}
+
+.StoryImg{
+    max-height:300px;
+    max-width:300px;
+    margin-top: 10px;
+    float: left;
+
+}
+
+.choices button{
+    margin: 20px;
+    margin-top: 50px;
+    height: 80px;
+    width: 300px;
+}
+
+.choice:hover{
+    cursor: pointer;
+}
+
+.newNodeForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.newNodeForm label{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.newNodeForm textarea{
+    margin-top: 5px;
+    min-width: 20px;
+    height: 60px;
+    width: 650px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    border-color: #5cca7b;
+    background-color: #fbfbfb;
+    font-size: 15px;
+    resize: none;
+}
+
+
+.newNodeForm button{
+    margin-top: 15px;
+    min-width: 20px;
+    height: 70px;
+    width: 675px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    border-color: #5cca7b;
+    background-color: #5cca7b;
+    font-size: 25px;
+    color: #f2ffff;
+}
+
+.newNodeForm button:hover{
+  cursor: pointer;
+  background-color: #50ac6a;
+}
+
+.newNodeForm button:focus{
+  outline: none;
+}
+
+.previousStorys{
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 3px inset #eee8e8;
+}
+
+.previousStory{
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #f5f5f8;
+    background-color: lightgray;
+}
+
+.like_b{
+    margin-left: 20px;
+    height: 25px;
+    width: 60px;
+    border-radius: 4px;
+    border-color: #6ea0da;
+    background-color: #cae4e4;
+    color: darkblue;
+    font-size: 16px;
+}
+
+.like_b:hover{
+    cursor: pointer;
+    background-color: #6ea0da;
+}
+
+.delete_b{
+    margin-left: 675px;
+    height: 25px;
+    width: 60px;
+    border-radius: 4px;
+    border-color: #f6511d;
+    background-color: #f8c4b4;
+    color: darkred;
+    font-size: 16px;
+}
+
+.delete_b:hover{
+  cursor: pointer;
+  background-color: #f6511d;
+}
+
+.authorAvatar{
+    max-height:30px;
+    max-width:30px;
+    border: 1px solid black;
+    margin-left: 2px;
+    margin-right: 2px;
+}

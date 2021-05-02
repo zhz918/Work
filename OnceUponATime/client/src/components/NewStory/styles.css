@@ -1,0 +1,15 @@
+.addStory {
+    text-align: center;
+    display: flex;
+}
+
+.addStoryHeaderContainer{
+    text-align: center;
+    margin-left: 270px;
+}
+
+.FormContainer{
+    margin-left: 550px;
+}
+
+

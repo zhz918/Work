@@ -1,0 +1,42 @@
+.card_container{
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px -5px #588b8b;
+    transition: 0.25s;
+    animation: ease-in-out;
+    margin: 25px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.card_container:hover{
+    cursor: pointer;
+    transform: scale(1.005);
+    box-shadow: 0px 0px 20px 5px lightgray;
+}
+
+.card_title h3{
+    text-align: center;
+    margin: 15px;
+}
+
+.image_container img{
+    overflow: hidden;
+    width: 400px;
+    height: 270px;
+}
+
+.card_body{
+    height: 220px;
+    overflow: hidden;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.b{
+    margin-left: 80px;
+}

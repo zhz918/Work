@@ -1,0 +1,18 @@
+.ProfilePageContainer {
+  text-align: center;
+  display: flex;
+  background-color: #fbfbfb;
+}
+
+.ProfilePage{
+  margin-left: 350px;
+}
+
+.ProfileHeaderContainer{
+  margin-left: 40px;
+}
+
+.Involved{
+  display: flex;
+  flex-wrap: wrap;
+}

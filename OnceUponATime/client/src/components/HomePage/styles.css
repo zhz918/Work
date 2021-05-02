@@ -1,0 +1,166 @@
+.HomePageContainer {
+  text-align: center;
+  display: flex;
+  background-color: #fbfbfb;
+}
+
+.HomePage{
+  margin-left: 250px;
+}
+
+.headerAndForm{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 550px;
+  margin-bottom: 25px;
+}
+
+.homepageTitle{
+  margin-bottom: 10px;
+  margin-right: 200px;
+}
+
+.deleteButtonContainer{
+  margin-left: 335px;
+  margin-bottom: -20px;
+}
+
+.sortByText {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.sortButtonContainer {
+    position: absolute;
+    left: 320px;
+    top: 120px;
+}
+
+.searchBar{
+  margin-top: 20px;
+  font-size: larger;
+}
+
+.SearchAndSort{
+  margin-bottom: 50px;
+}
+
+.sortButton {
+  display: inline-block;
+  height: 40px;
+  width: 150px;
+  border-color: #edfff2;
+  color: black;
+  margin-bottom: 35px;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.sortButton:hover{
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.sortButton:focus{
+  outline: none;
+  background-color: #ccc;
+}
+
+.searchBar {
+    right: 200px;
+    top: 110px;
+    position: absolute;
+}
+
+.searchBarLabel {
+    margin-right: 5px;
+}
+
+.searchBarSubmit {
+    margin-left: 5px;
+}
+
+.deleteButton{
+  height: 25px;
+  width: 60px;
+  border-radius: 4px;
+  border-color: #f6511d;
+  background-color: #f8c4b4;
+  color: darkred;
+  font-size: 16px;
+}
+
+.deleteButton:hover{
+  cursor: pointer;
+  background-color: #f6511d;
+}
+
+.addStoryContainer{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 2px 2px lightgray;
+  padding: 10px 10px 10px 10px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: #f5f5f8;
+}
+
+.addStoryContainer label{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.storyForm1, .storyForm2{
+  align-items: flex-end;
+}
+
+.storyForm1 label, .storyForm2 label{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.storyForm1 input, .storyForm2 input{
+  margin-top: 5px;
+  min-width: 20px;
+  height: 25px;
+  width: 100px;
+  padding: 5px 5px 5px 5x;
+  border-radius: 4px;
+  border-color: lightgray;
+  background-color: #fbfbfb;
+  font-size: 15px;
+}
+
+.storyForm1 input:focus, .storyForm2 input:focus{
+  outline: none;
+  box-shadow: 0px 0px 5px 0.5px #3890d8;
+}
+
+.StoryCards{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.submit{
+  margin-top: 10px;
+  align-self: center;
+  height: 25px;
+  width: 200px;
+  border-color: #5cca7b;
+  border-radius: 4px;
+  background-color: #5cca7b;
+  font-size: 18px;
+  color: #f2ffff;
+}
+
+.submit:hover{
+  cursor: pointer;
+  background-color: #50ac6a;
+}
+
+.submit:focus{
+  outline: none;
+}

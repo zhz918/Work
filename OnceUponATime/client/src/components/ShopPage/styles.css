@@ -1,0 +1,218 @@
+.ShopPageContainer {
+  text-align: center;
+  display: flex;
+  background-color: #fbfbfb;
+}
+
+.shopHeaderContainer{
+  margin-left: 280px;
+}
+
+.adminShopContainer {
+  text-align: center;
+}
+
+.ShopPage{
+  margin-left: 620px;
+}
+
+.ProductList{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+
+.ProductTypeTitle{
+  text-align: left;
+  margin-left: 5px;
+}
+
+.product_container{
+  width: 200px;
+  height: 275px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px -5px;
+  transition: 0.25s;
+  animation: ease-in-out;
+  margin: 25px;
+  border-radius: 8px;
+}
+
+.product_container:hover{
+  cursor: pointer;
+  transform: scale(1.005);
+  box-shadow: 0px 0px 15px 0px;
+}
+
+.ProductUpper{
+  width: 200px;
+  height: 200px;
+}
+
+.ProductUpper img{
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin: 25px;
+}
+
+.ProductLower{
+  width: 200px;
+  height: 100px;
+  overflow: hidden;
+  background-color: #f3f3f4;
+}
+
+.product_title {
+  overflow: hidden;
+  text-align: center;
+  margin: 5px;
+}
+.product_price{
+  overflow: hidden;
+}
+.product_price p{
+  text-align: center;
+  margin: 5px;
+}
+
+.tab {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  height: 50px;
+  width: 200px;
+  border-color: #edfff2;
+  color: black;
+  margin-bottom: 25px;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.newForm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.newForm label{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.newForm textarea{
+    margin-top: 5px;
+    min-width: 20px;
+    height: 70px;
+    width: 575px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    border-color: #5cca7b;
+    background-color: #fbfbfb;
+    font-size: 15px;
+    resize: none;
+}
+
+.newForm select{
+  height: 40px;
+  width: 150px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 4px;
+  border-color: lightslategray;
+  background-color: #fbfbfb;
+  font-size: 15px;
+}
+
+.newForm input{
+  margin-top: 5px;
+  min-width: 20px;
+  height: 30px;
+  width: 250px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 4px;
+  border-color: whitesmoke;
+  background-color: #fbfbfb;
+  font-size: 15px;
+}
+
+.newForm button{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    min-width: 20px;
+    height: 60px;
+    width: 600px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    border-color: #5cca7b;
+    background-color: #5cca7b;
+    font-size: 25px;
+    color: #f2ffff;
+}
+
+.newForm button:hover{
+  cursor: pointer;
+  background-color: #50ac6a;
+}
+
+.newForm button:focus{
+  outline: none;
+}
+
+.addNewButton{
+  min-width: 20px;
+  height: 35px;
+  width: 225px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 4px;
+  border-color: #71bb84;
+  background-color: #9cd3ac;
+  font-size: 18px;
+  color: #3b3d3d;
+}
+
+.addNewButton:hover{
+  cursor: pointer;
+  background-color: #50ac6a;
+  color: #f2ffff;
+}
+
+.addNewButton:focus{
+  outline: none;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.tab button:focus{
+  outline: none;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.shopTabs {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#adminShopBuy{ 
+  display: block;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}

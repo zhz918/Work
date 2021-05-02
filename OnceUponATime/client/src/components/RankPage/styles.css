@@ -1,0 +1,86 @@
+.RankPageContainer {
+  display: flex;
+}
+
+.RankPage {
+  margin-left: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.RankLink {
+    text-decoration: none;
+    color: black;
+}
+
+.FilterButton {
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  border-color: #edfff2;
+  color: black;
+  margin-bottom: 35px;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.FilterButton:hover{
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.FilterButton:focus{
+  outline: none;
+  background-color: #ccc;
+}
+
+.RankTable, .RankTable td {
+  font-size: 34px;
+  width: 700px;
+}
+
+.RankTable {
+    table-layout: fixed;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 7px -2px #588b8b;
+    margin: 25px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.RankTable td {
+    width: 50%;
+    height: 60px;
+}
+
+.RankTable th, .RankTable td {
+    border-bottom: 2px solid #cccccc;
+    border-left: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+    width: 350px;
+}
+
+.RankTable img {
+  padding: 7px 7px 0px;
+  border: 1px solid gray;
+  padding-bottom: 5px;
+  margin: 10px 10px 0px 0px;
+  display: inline-block;
+}
+
+.RankText {
+    padding: 0px 7px 7px;
+    text-align: center;
+}
+
+.NameElement {
+     position: relative;
+     left: 120px;
+}
+
+.NameText {
+    position: relative;
+    margin-right: 10px;
+    bottom: 14px;
+}

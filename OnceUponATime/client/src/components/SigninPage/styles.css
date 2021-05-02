@@ -1,0 +1,81 @@
+.signInContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageContainer{
+  margin-top: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.imageContainer img{
+  position: relative;
+  width: 100px;
+}
+
+.loginTitle{
+  margin-top: 35px;
+  font-size: 30px;
+}
+
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 2px 2px lightgray;
+  margin-top: 25px;
+  padding: 20px 30px 30px 30px;
+  border-radius: 8px;
+  background-color: #f5f5f8;
+}
+
+.loginForm{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.loginForm label{
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.loginForm input{
+  margin-top: 5px;
+  min-width: 20px;
+  height: 30px;
+  width: 250px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 4px;
+  border-color: whitesmoke;
+  background-color: #fbfbfb;
+  font-size: 15px;
+}
+
+.loginForm input:focus{
+  outline: none;
+  box-shadow: 0px 0px 5px 0.5px #3890d8;
+}
+
+.but{
+  margin-top: 25px;
+  height: 35px;
+  width: 250px;
+  align-self: center;
+  border-color: #5cca7b;
+  border-radius: 4px;
+  background-color: #5cca7b;
+  font-size: 20px;
+  color: #f2ffff;
+}
+
+.but:hover{
+  cursor: pointer;
+  background-color: #50ac6a;
+}
+
+.but:focus{
+  outline: none;
+}
