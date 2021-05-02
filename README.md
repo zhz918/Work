@@ -8,7 +8,7 @@ A JavaScript library that enables developers to create simulations of animals th
 
 ## ChatSystem
 
-Creates Twitter-like functionality (follower-followee relations, message length limits etc.) and allows users to send messages to other users using a socket implementation.
+Creates Twitter-like functionality (follower-followee relations, message length limits, etc.) and allows users to send messages to other users using a socket implementation.
 
 ## FileTree
 
@@ -16,8 +16,8 @@ Takes a directory name and generates a listing of the folders and files within i
 
 ## InteractiveHeatmaps
 
-Processes street data from Numina sensors to determine characteristics of the traffic through selected regions to be monitored. Heatmaps visually shows the traffic and allows filtering by object, metric, and weekday, among other options.
+Processes street data from Numina sensors to determine characteristics of the traffic through selected regions to be monitored. Heatmaps visually show the traffic and allow filtering by object, metric, and weekday, among other options.
 
 ## ZombieVsPlants
 
-A tower defense game similar to Plants Vs. Zombies where the player adds zombies to a five lane battle area to prevent the plants from reaching the left side. Can be played with three zombie types and four plant types. Built using Java in Android Studio.
+A tower defense game similar to Plants Vs. Zombies where the player adds zombies to a five-lane battle area to prevent the plants from reaching the left side. Can be played with three zombie types and four plant types. Built using Java in Android Studio.
