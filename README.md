@@ -20,7 +20,11 @@ Processes street data from Numina sensors to determine characteristics of the tr
 
 ## OnceUponATime
 
-A web app completed in a group that enables users to share and contribute to stories that are read by other users. The frontend of the app was written using HTML, CSS, JavaScript, and React, while the backend uses node.js and MongoDB running on an Express server.
+A website where users can share and contribute to stories that are read by other users. The frontend of the app was written using HTML, CSS, JavaScript, and React, while the backend uses node.js and MongoDB running on an Express server.
+
+## UntangleMoneyApp
+
+A website designed for women who need financial guidance. The app takes a financial profile from the user and gives them a breakdown of their future financial situation depending on the scenarios they set for themselves inside the app. The frontend uses React, the visualizations use D3.js, while the backend, authentication, and storage use Google Firebase.
 
 ## ZombieVsPlants
 
